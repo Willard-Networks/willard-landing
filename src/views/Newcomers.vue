@@ -66,7 +66,7 @@ export default {
 
   watch: {
     timerCount: {
-      handler (value) {
+      handler () {
         setTimeout(() => {
           var random = Math.random() * (50 - 1) + 1
           this.timerCount = Math.floor(random)
