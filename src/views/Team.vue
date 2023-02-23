@@ -27,7 +27,7 @@
               <v-subheader
                 v-if="item.header"
                 :key="item.header"
-                v-text="item.header"
+                {{ item.header }}
               ></v-subheader>
 
               <v-divider
@@ -62,7 +62,7 @@
               <v-subheader
                 v-if="item.header"
                 :key="item.header"
-                v-text="item.header"
+                {{ item.header }}
               ></v-subheader>
 
               <v-divider
