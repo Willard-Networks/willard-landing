@@ -74,7 +74,7 @@
         depressed
         icon
       >
-        <v-icon>mdi-discord</v-icon>
+        <v-icon>mdi-microphone-message</v-icon>
       </v-btn>
       <v-btn
         href="https://steamcommunity.com/groups/willardnetworks"
@@ -158,7 +158,7 @@
               depressed
               icon
             >
-              <v-icon>mdi-discord</v-icon>
+              <v-icon>mdi-microphone-message</v-icon>
             </v-btn>
             <v-btn
               href="https://steamcommunity.com/groups/willardnetworks"

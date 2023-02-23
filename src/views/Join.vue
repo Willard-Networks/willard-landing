@@ -18,7 +18,7 @@
           width="220"
           color="primary"
         >
-          <v-icon class="mr-2">mdi-discord</v-icon>Discord
+          <v-icon class="mr-2">mdi-microphone-message</v-icon>Discord
         </v-btn>
         <v-btn
           href="https://willard.network/forums/"
