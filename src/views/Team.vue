@@ -144,6 +144,11 @@ export default {
         title: 'WN: Veles (PL)'
       },
       {
+        avatar: 'https://willard.network/hl2rp_imgs/avatars/hayden.png',
+        name: 'Hayden',
+        title: 'WN: Short Stories (EN)'
+      },
+      {
         avatar: 'https://willard.network/hl2rp_imgs/avatars/goose.png',
         name: 'Goose',
         title: 'WN: Mythos (EN HaloRP)'
