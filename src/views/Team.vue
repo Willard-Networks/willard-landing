@@ -234,7 +234,7 @@ export default {
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/mango.jpg',
+        avatar: 'https://willard.network/hl2rp_imgs/avatars/mango.png',
         name: 'Mango',
         title: 'Developer'
       },
