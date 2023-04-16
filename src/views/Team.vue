@@ -263,7 +263,7 @@ export default {
 <style lang="scss">
 #team {
   .parallax {
-    background-image: url("https://willard.network/hl2rp_imgs/cps.jpg");
+    background-image: url("~@/assets/hl2rp_imgs/cps.jpg");
     &:before {
       content: "";
       background-color: rgba(34, 32, 64, 0.85);

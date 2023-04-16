@@ -65,7 +65,7 @@ export default {
 <style lang="scss">
 #faq {
   .parallax {
-    background-image: url("https://willard.network/hl2rp_imgs/cityadmin.jpg");
+    background-image: url("~@/assets/hl2rp_imgs/cityadmin.jpg");
     &:before {
       content: "";
       background-color: rgba(34, 32, 64, 0.6);

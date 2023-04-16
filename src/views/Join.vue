@@ -41,7 +41,7 @@ export default {
 <style lang="scss">
 #join {
   .parallax {
-    background-image: url("https://willard.network/hl2rp_imgs/citadel.jpg");
+    background-image: url("~@/assets/hl2rp_imgs/citadel.jpg");
     &:before {
       content: "";
       background-color: rgba(34, 32, 64, 0.6);

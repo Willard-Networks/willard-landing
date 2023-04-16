@@ -82,7 +82,7 @@ export default {
 <style lang="scss">
 #newcomers {
   .parallax {
-    background-image: url("https://willard.network/hl2rp_imgs/city.jpg");
+    background-image: url("~@/assets/hl2rp_imgs/city.jpg");
     &:before {
       content: "";
       background-color: rgba(34, 32, 64, 0.7);
