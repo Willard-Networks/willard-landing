@@ -49,32 +49,6 @@
       </v-card>
     </v-col>
     <div class="parallax">
-      <!-- <video
-        class="bg-vid"
-        :poster="getPoster()"
-        v-on-intersect="{topOffset: loadOffset, bottomOffset: loadOffset, once: !pauseOnExit}"
-        ref="video"
-        preload="none"
-        v-on:loadeddata="loaded = true"
-        v-on:play="playing = true"
-        v-on:pause="playing = false"
-        v-bind="attrs"
-        autoplay
-        loop
-      >
-        <source
-          v-for="(source, i) in videoSources"
-          :src="require('@/assets/gman_vid.mp4')"
-          :key="i"
-        />
-      </video> -->
-
-      <!-- <LazyVideo
-          v-bind="attrs"
-          class="bg-vid"
-          :src="require('@/assets/gman_vid.mp4')"
-          :poster="require('@/assets/gman.jpg')"
-        /> -->
       <video
         class="bg-vid"
         autoplay
