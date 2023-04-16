@@ -1,4 +1,4 @@
-# willardnetworks
+# Willard Networks Landing Page
 
 ## Project setup
 ```
