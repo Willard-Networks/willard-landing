@@ -103,155 +103,155 @@ export default {
   data: () => ({
     management: [
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/atle.jpg',
+        avatar: 'avatars/atle.jpg',
         name: 'Atle',
         title: 'Willard Networks Director'
       },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/votton.jpg',
+        avatar: 'avatars/votton.jpg',
         name: 'Votton',
         title: 'Willard Networks Tech Manager'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/legion.jpg',
+        avatar: 'avatars/legion.jpg',
         name: 'Legion',
         title: 'WN7 Manager (RU)'
       },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/pixel.gif',
+        avatar: 'avatars/pixel.gif',
         name: 'Pixel',
         title: 'WNO Manager (SPA)'
       },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/heat.png',
+        avatar: 'avatars/heat.png',
         name: 'Heat',
         title: 'OVC Manager (ROK)'
       },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/charly.png',
+        avatar: 'avatars/charly.png',
         name: 'Charly',
         title: 'WN: Echo One Manager (FR)'
       },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/abyss.png',
+        avatar: 'avatars/abyss.png',
         name: 'Abyss',
         title: 'WN: Ordem17 (BR)'
       },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/loxy.png',
+        avatar: 'avatars/loxy.png',
         name: 'Loxy',
         title: 'WN: Veles (PL)'
       },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/hayden.png',
+        avatar: 'avatars/hayden.png',
         name: 'Hayden',
         title: 'WN: Short Stories (EN)'
       },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/goose.png',
+        avatar: 'avatars/goose.png',
         name: 'Goose',
         title: 'WN: Mythos (EN HaloRP)'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/rad.jpg',
+        avatar: 'avatars/rad.jpg',
         name: 'Lord-Rad-X',
         title: 'Server Director'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/noodle.jpg',
+        avatar: 'avatars/noodle.jpg',
         name: 'Noodle',
         title: 'Server Council Member'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/mint.jpg',
+        avatar: 'avatars/mint.jpg',
         name: 'M!nt',
         title: 'Server Council Member'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/rabithunter.png',
+        avatar: 'avatars/rabithunter.png',
         name: 'Rabithunter',
         title: 'Server Council Member'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/denuke.png',
+        avatar: 'avatars/denuke.png',
         name: 'Denuke',
         title: 'Server Council Member'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/neonity.png',
+        avatar: 'avatars/neonity.png',
         name: 'Neonity',
         title: 'Staff Manager'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/crab.png',
+        avatar: 'avatars/crab.png',
         name: 'Crab',
         title: 'Staff Manager'
       }
     ],
     devs: [
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/aspect.jpg',
+        avatar: 'avatars/aspect.jpg',
         name: 'Aspect',
         title: 'Developer'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/gr4ss.jpg',
+        avatar: 'avatars/gr4ss.jpg',
         name: 'Gr4Ss',
         title: 'Server Engineer'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/fruity.jpg',
+        avatar: 'avatars/fruity.jpg',
         name: 'Fruity',
         title: 'Lead UI Developer'
       },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/geferon.jpg',
+        avatar: 'avatars/geferon.jpg',
         name: 'Geferon',
         title: 'Developer'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/Miliviu.jpg',
+        avatar: 'avatars/Miliviu.jpg',
         name: 'Miliviu',
         title: 'Developer'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/whitehole.jpg',
+        avatar: 'avatars/whitehole.jpg',
         name: 'Whitehole',
         title: 'Developer'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/naast.jpg',
+        avatar: 'avatars/naast.jpg',
         name: 'Naast Kyram',
         title: 'Developer'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/mango.png',
+        avatar: 'avatars/mango.png',
         name: 'Mango',
         title: 'Developer'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/kawa.jpg',
+        avatar: 'avatars/kawa.jpg',
         name: 'kawasaniac',
         title: '3D Modeler'
       },
       { divider: true, inset: true },
       {
-        avatar: 'https://willard.network/hl2rp_imgs/avatars/wn.jpg',
+        avatar: 'avatars/wn.jpg',
         name: 'The Community',
         title: 'Players, Admins and all Contributors alike'
       },
