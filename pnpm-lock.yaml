@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^7.23.6
     version: 7.23.6
   '@babel/eslint-parser':
-    specifier: ^7.22.9
-    version: 7.22.9(@babel/core@7.23.6)(eslint@8.56.0)
+    specifier: ^7.23.10
+    version: 7.23.10(@babel/core@7.23.6)(eslint@8.56.0)
   '@vue/cli-plugin-babel':
     specifier: ~5.0.8
     version: 5.0.8(@vue/cli-service@5.0.8)(core-js@3.31.1)(vue@2.7.14)
@@ -152,11 +152,11 @@ packages:
       - supports-color
     dev: true
 
-  /@babel/eslint-parser@7.22.9(@babel/core@7.23.6)(eslint@8.56.0):
-    resolution: {integrity: sha512-xdMkt39/nviO/4vpVdrEYPwXCsYIXSSAr6mC7WQsNIlGnuxKyKE7GZjalcnbSWiC4OXGNNN3UQPeHfjSC6sTDA==}
+  /@babel/eslint-parser@7.23.10(@babel/core@7.23.6)(eslint@8.56.0):
+    resolution: {integrity: sha512-3wSYDPZVnhseRnxRJH6ZVTNknBz76AEnyC+AYYhasjP3Yy23qz0ERR7Fcd2SHmYuSFJ2kY9gaaDd3vyqU09eSw==}
     engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
     peerDependencies:
-      '@babel/core': '>=7.11.0'
+      '@babel/core': ^7.11.0
       eslint: ^7.5.0 || ^8.0.0
     dependencies:
       '@babel/core': 7.23.6
@@ -1953,7 +1953,7 @@ packages:
       babel-plugin-dynamic-import-node: 2.3.3
       core-js: 3.31.1
       core-js-compat: 3.31.0
-      semver: 7.5.1
+      semver: 7.5.4
       vue: 2.7.14
     transitivePeerDependencies:
       - supports-color
@@ -2279,7 +2279,7 @@ packages:
       open: 8.4.2
       ora: 5.4.1
       read-pkg: 5.2.0
-      semver: 7.5.1
+      semver: 7.5.4
       strip-ansi: 6.0.1
     transitivePeerDependencies:
       - encoding
@@ -3379,7 +3379,7 @@ packages:
       postcss-modules-scope: 3.0.0(postcss@8.4.24)
       postcss-modules-values: 4.0.0(postcss@8.4.24)
       postcss-value-parser: 4.2.0
-      semver: 7.5.1
+      semver: 7.5.4
       webpack: 5.86.0
     dev: true
 
@@ -5518,7 +5518,7 @@ packages:
       cosmiconfig: 7.1.0
       klona: 2.0.6
       postcss: 8.4.24
-      semver: 7.5.1
+      semver: 7.5.4
       webpack: 5.86.0
     dev: true
 
