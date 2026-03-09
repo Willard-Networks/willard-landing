@@ -41,14 +41,6 @@
       >
         Lore
       </v-btn>
-      <v-btn
-        @click="$vuetify.goTo('#team', options)"
-        class="d-none d-sm-flex"
-        depressed
-        text
-      >
-        The team
-      </v-btn>
       <v-divider vertical></v-divider>
       <v-btn
         href="https://willard.network/forums/"
@@ -126,14 +118,6 @@
           </v-list-item>
           <v-divider></v-divider>
           <v-list-item
-            @click="$vuetify.goTo('#team', options)"
-            class="mb-0"
-            tile
-          >
-            <v-list-item-title class="rounded-0">The Team</v-list-item-title>
-          </v-list-item>
-          <v-divider></v-divider>
-          <v-list-item
             @click="$vuetify.goTo('#faq', options)"
             class="mb-0"
             tile
@@ -181,7 +165,6 @@
       <Newcomers />
       <Gameplay />
       <Lore />
-      <Team />
       <Faq />
       <Join />
     </v-container>
@@ -194,7 +177,6 @@ import Intro from '@/views/Intro.vue'
 import Newcomers from '@/views/Newcomers.vue'
 import Gameplay from '@/views/Gameplay.vue'
 import Lore from '@/views/Lore.vue'
-import Team from '@/views/Team.vue'
 import Faq from '@/views/Faq.vue'
 import Join from '@/views/Join.vue'
 export default {
@@ -211,7 +193,6 @@ export default {
     Newcomers,
     Gameplay,
     Lore,
-    Team,
     Faq,
     Join
   },
