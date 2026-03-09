@@ -14,8 +14,9 @@
     >
       <v-card
         max-width="380"
-        class="content mx-auto transparent"
-        flat
+        class="content mx-auto"
+        variant="flat"
+        color="transparent"
       >
         <h1>Lore.</h1>
         <h2 class="font-italic">Unique community written HL2RP lore</h2>
@@ -25,13 +26,9 @@
         <v-btn
           href="https://willard.network/forums/threads/updated-willard-networks-lorefront-past-to-present.274/"
           class="mt-4"
-          outlined
-        >
-          <v-icon
-            class="mr-2"
-            small
-          >mdi-script-text</v-icon>Read more
-        </v-btn>
+          variant="outlined"
+          prepend-icon="mdi-script-text"
+        >Read more</v-btn>
       </v-card>
     </v-col>
     <div class="parallax"></div>

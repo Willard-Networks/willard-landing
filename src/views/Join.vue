@@ -6,8 +6,9 @@
   >
     <v-col cols="12">
       <v-card
-        class="content transparent"
-        flat
+        class="content"
+        variant="flat"
+        color="transparent"
       >
         <h1>Join Willards</h1>
         <h2>Your HL2RP adventure awaits!</h2>
@@ -17,17 +18,15 @@
           class="mt-6 py-6 mx-2"
           width="220"
           color="primary"
-        >
-          <v-icon class="mr-2">mdi-microphone-message</v-icon>Discord
-        </v-btn>
+          prepend-icon="mdi-microphone-message"
+        >Discord</v-btn>
         <v-btn
           href="https://willard.network/forums/"
           class="mt-6 py-6 mx-2"
           width="220"
           color="primary"
-        >
-          <v-icon class="mr-2">mdi-forum</v-icon>Forums
-        </v-btn>
+          prepend-icon="mdi-forum"
+        >Forums</v-btn>
       </v-card>
     </v-col>
     <div class="parallax"></div>

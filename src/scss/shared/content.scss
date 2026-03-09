@@ -2,7 +2,7 @@
     z-index: 1;
     h1 {
       font-size: 3.7rem;
-      color: var(--v-primary-base);
+      color: rgb(var(--v-theme-primary));
       font-family: "Source Sans Pro", sans-serif;
       text-transform: uppercase;
       letter-spacing: 6px;
@@ -10,7 +10,7 @@
     }
     h2 {
       font-size: 1.6rem;
-      color: var(--v-secondary-base);
+      color: rgb(var(--v-theme-secondary));
       font-family: "Source Sans Pro", sans-serif;
       text-transform: uppercase;
       letter-spacing: 6px;

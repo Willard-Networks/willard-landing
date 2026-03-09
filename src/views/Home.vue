@@ -1,13 +1,13 @@
 <template>
   <v-card
-    flat
-    tile
+    variant="flat"
+    rounded="0"
+    color="transparent"
     class="mx-auto"
   >
     <v-app-bar
       class="navbar"
       flat
-      dark
       fixed
       height="50"
       color="rgba(0,0,0,0)"
@@ -18,26 +18,23 @@
       <v-spacer></v-spacer>
 
       <v-btn
-        @click="$vuetify.goTo('#newcomers', options)"
+        @click="scrollTo('#newcomers')"
         class="d-none d-sm-flex"
-        depressed
-        text
+        variant="text"
       >
         New arrivals
       </v-btn>
       <v-btn
-        @click="$vuetify.goTo('#gameplay', options)"
+        @click="scrollTo('#gameplay')"
         class="d-none d-sm-flex"
-        depressed
-        text
+        variant="text"
       >
         HL2RP Gameplay
       </v-btn>
       <v-btn
-        @click="$vuetify.goTo('#lore', options)"
+        @click="scrollTo('#lore')"
         class="d-none d-sm-flex"
-        depressed
-        text
+        variant="text"
       >
         Lore
       </v-btn>
@@ -45,16 +42,14 @@
       <v-btn
         href="https://willard.network/forums/"
         class="d-none d-sm-flex"
-        depressed
-        text
+        variant="text"
       >
         Forums
       </v-btn>
       <v-btn
-        @click="$vuetify.goTo('#faq', options)"
+        @click="scrollTo('#faq')"
         class="d-none d-sm-flex"
-        depressed
-        text
+        variant="text"
       >
         FAQ
       </v-btn>
@@ -63,7 +58,7 @@
         href="https://discord.gg/HbDjUQd"
         target="_blank"
         class="d-none d-sm-flex"
-        depressed
+        variant="text"
         icon
       >
         <v-icon>mdi-microphone-message</v-icon>
@@ -72,7 +67,7 @@
         href="https://steamcommunity.com/groups/willardnetworks"
         target="_blank"
         class="d-none d-sm-flex"
-        depressed
+        variant="text"
         icon
       >
         <v-icon>mdi-steam</v-icon>
@@ -81,11 +76,10 @@
 
     <v-navigation-drawer
       v-model="drawer"
-      fixed
       temporary
     >
       <v-list nav>
-        <v-list-item-group class="text-center">
+        <div class="text-center">
           <v-img
             alt="HL2RP"
             class="my-4 mx-auto"
@@ -94,35 +88,35 @@
           ></v-img>
           <v-divider></v-divider>
           <v-list-item
-            @click="$vuetify.goTo('#newcomers', options)"
+            @click="scrollTo('#newcomers')"
             class="mb-0"
-            tile
+            rounded="0"
           >
-            <v-list-item-title class="rounded-0">New arrivals</v-list-item-title>
+            <v-list-item-title>New arrivals</v-list-item-title>
           </v-list-item>
           <v-divider></v-divider>
           <v-list-item
-            @click="$vuetify.goTo('#gameplay', options)"
+            @click="scrollTo('#gameplay')"
             class="mb-0"
-            tile
+            rounded="0"
           >
-            <v-list-item-title class="rounded-0">HL2RP Gameplay</v-list-item-title>
+            <v-list-item-title>HL2RP Gameplay</v-list-item-title>
           </v-list-item>
           <v-divider></v-divider>
           <v-list-item
-            @click="$vuetify.goTo('#lore', options)"
+            @click="scrollTo('#lore')"
             class="mb-0"
-            tile
+            rounded="0"
           >
-            <v-list-item-title class="rounded-0">Lore</v-list-item-title>
+            <v-list-item-title>Lore</v-list-item-title>
           </v-list-item>
           <v-divider></v-divider>
           <v-list-item
-            @click="$vuetify.goTo('#faq', options)"
+            @click="scrollTo('#faq')"
             class="mb-0"
-            tile
+            rounded="0"
           >
-            <v-list-item-title class="rounded-0">FAQ</v-list-item-title>
+            <v-list-item-title>FAQ</v-list-item-title>
           </v-list-item>
           <v-divider></v-divider>
           <div class="d-flex justify-center mt-8">
@@ -130,7 +124,7 @@
               href="https://willard.network/forums/"
               target="_blank"
               class="mx-1"
-              depressed
+              variant="text"
               icon
             >
               <v-icon>mdi-forum</v-icon>
@@ -139,7 +133,7 @@
               href="https://discord.gg/HbDjUQd"
               target="_blank"
               class="mx-1"
-              depressed
+              variant="text"
               icon
             >
               <v-icon>mdi-microphone-message</v-icon>
@@ -148,13 +142,13 @@
               href="https://steamcommunity.com/groups/willardnetworks"
               target="_blank"
               class="mx-1"
-              depressed
+              variant="text"
               icon
             >
               <v-icon>mdi-steam</v-icon>
             </v-btn>
           </div>
-        </v-list-item-group>
+        </div>
       </v-list>
     </v-navigation-drawer>
     <v-container
@@ -172,7 +166,6 @@
 </template>
 
 <script>
-import * as easings from 'vuetify/es5/services/goto/easing-patterns'
 import Intro from '@/views/Intro.vue'
 import Newcomers from '@/views/Newcomers.vue'
 import Gameplay from '@/views/Gameplay.vue'
@@ -182,11 +175,7 @@ import Join from '@/views/Join.vue'
 export default {
   name: 'Home',
   data: () => ({
-    drawer: false,
-    duration: 400,
-    offset: 0,
-    easing: 'easeInOutCubic',
-    easings: Object.keys(easings)
+    drawer: false
   }),
   components: {
     Intro,
@@ -196,13 +185,13 @@ export default {
     Faq,
     Join
   },
-  computed: {
-    options () {
-      return {
-        duration: this.duration,
-        offset: this.offset,
-        easing: this.easing
+  methods: {
+    scrollTo (selector) {
+      const el = document.querySelector(selector)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' })
       }
+      this.drawer = false
     }
   }
 }
@@ -217,7 +206,7 @@ body {
     background-color: rgba(0, 0, 0, 0.9) !important;
   }
 }
-.theme--dark.v-navigation-drawer {
+.v-navigation-drawer {
   background-color: rgba(54, 54, 54, 0.5) !important;
   backdrop-filter: blur(4px) !important;
 }

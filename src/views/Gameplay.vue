@@ -14,8 +14,9 @@
     >
       <v-card
         max-width="360"
-        class="content mx-auto transparent"
-        flat
+        class="content mx-auto"
+        variant="flat"
+        color="transparent"
       >
         <h1>HL2RP Gameplay.</h1>
         <h2 class="font-italic">Built for roleplay</h2>
@@ -24,13 +25,9 @@
         <v-btn
           href="https://willard.network/forums/wn/development-updates.60/"
           class="mt-4"
-          outlined
-        >
-          <v-icon
-            class="mr-2"
-            small
-          >mdi-hammer-wrench</v-icon>Dev diaries
-        </v-btn>
+          variant="outlined"
+          prepend-icon="mdi-hammer-wrench"
+        >Dev diaries</v-btn>
       </v-card>
     </v-col>
     <div class="parallax"></div>
