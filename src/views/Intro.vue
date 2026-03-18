@@ -6,8 +6,9 @@
   >
     <v-col class="pl-8 pl-md-3">
       <v-card
-        class="intro-content mx-auto transparent mb-12"
-        flat
+        class="intro-content mx-auto mb-12"
+        variant="flat"
+        color="transparent"
       >
         <v-img
           alt="HL2RP"
@@ -18,30 +19,30 @@
         <h1 class="mb-6">Willard Networks</h1>
         <div class="d-none d-sm-block">
           <v-btn
-            @click="$vuetify.goTo('#newcomers', options)"
-            text
+            @click="scrollTo('#newcomers')"
+            variant="text"
           >New arrivals</v-btn>
           <v-btn
-            @click="$vuetify.goTo('#gameplay', options)"
-            text
+            @click="scrollTo('#gameplay')"
+            variant="text"
           >HL2RP Gameplay</v-btn>
           <v-btn
-            @click="$vuetify.goTo('#lore', options)"
-            text
+            @click="scrollTo('#lore')"
+            variant="text"
           >Lore</v-btn>
           <v-btn
-            @click="$vuetify.goTo('#team', options)"
-            text
+            @click="scrollTo('#team')"
+            variant="text"
           >The team</v-btn>
         </div>
         <div class="mt-12 pt-6">
           <v-btn
             href="https://willard.network/forums/"
-            class="body-1 py-5"
-            tile
-            outlined
+            class="py-5"
+            rounded="0"
+            variant="outlined"
             color="primary"
-            x-large
+            size="x-large"
           >
             Visit forums<v-icon class="ml-1">mdi-arrow-right</v-icon>
           </v-btn>
@@ -65,80 +66,12 @@
 </template>
 <script>
 export default {
-  name: 'LazyVideo',
-  data () {
-    return {
-      isIntersecting: null,
-      loaded: false,
-      playing: false,
-      posterLoaded: false
-    }
-  },
-  props: {
-    poster: String,
-    src: {
-      type: String,
-      required: false
-    },
-    sources: {
-      type: Array,
-      required: false
-    },
-    attrs: {
-      type: Object,
-      required: false,
-      default: function () {
-        return {
-          controls: false,
-          playsinline: true,
-          loop: true,
-          autoplay: true,
-          muted: false
-        }
-      }
-    },
-    loadOffset: {
-      default: '50%',
-      required: false,
-      type: String
-    },
-    pauseOnExit: {
-      default: true,
-      required: false,
-      type: Boolean
-    }
-  },
-  computed: {
-    videoSources () {
-      return this.sources || [this.src]
-    }
-  },
+  name: 'Intro',
   methods: {
-    getPoster () {
-      if (this.isIntersecting && !this.posterLoaded) {
-        this.posterLoaded = true
-        return this.poster
-      } else if (this.posterLoaded) {
-        return this.poster
-      } else {
-        return ''
-      }
-    }
-  },
-  watch: {
-    loaded (isLoaded) {
-      if (isLoaded) {
-        this.$emit('loaded')
-      }
-    },
-    isIntersecting (isIntersecting, wasIntersecting) {
-      // when out of view pause video
-      if (wasIntersecting && this.playing && this.pauseOnExit) {
-        this.$refs.video.pause()
-      }
-      // load if video is intersecting
-      if (isIntersecting && !this.loaded) {
-        this.$refs.video.load()
+    scrollTo (selector) {
+      const el = document.querySelector(selector)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' })
       }
     }
   }
@@ -157,11 +90,10 @@ export default {
       color: white;
       line-height: 1;
     }
-    .v-btn {
-      font-family: "Source Sans Pro", sans-serif;
-      text-transform: uppercase;
-      font-size: 1.4rem;
-      letter-spacing: 6px;
+    .v-btn--variant-text {
+      font-family: "Source Sans Pro", sans-serif !important;
+      font-size: 1.4rem !important;
+      letter-spacing: 6px !important;
       color: rgb(196, 196, 196);
       &:hover {
         color: white;

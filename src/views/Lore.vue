@@ -14,8 +14,9 @@
     >
       <v-card
         max-width="380"
-        class="content mx-auto transparent"
-        flat
+        class="content mx-auto"
+        variant="flat"
+        color="transparent"
       >
         <h1>Lore.</h1>
         <h2 class="font-italic">Unique community written HL2RP lore</h2>
@@ -25,12 +26,9 @@
         <v-btn
           href="https://willard.network/forums/threads/updated-willard-networks-lorefront-past-to-present.274/"
           class="mt-4"
-          outlined
+          variant="outlined"
         >
-          <v-icon
-            class="mr-2"
-            small
-          >mdi-script-text</v-icon>Read more
+          <v-icon class="mr-2" size="small">mdi-script-text</v-icon>Read more
         </v-btn>
       </v-card>
     </v-col>
@@ -44,7 +42,7 @@ export default {
 <style lang="scss">
 #lore {
   .parallax {
-    background-image: url("~@/assets/hl2rp_imgs/globe.jpg");
+    background-image: url("@/assets/hl2rp_imgs/globe.jpg");
     &:before {
       content: "";
       background-color: rgba(34, 32, 64, 0.7);

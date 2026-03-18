@@ -6,8 +6,9 @@
   >
     <v-col cols="12">
       <v-card
-        class="content transparent"
-        flat
+        class="content"
+        variant="flat"
+        color="transparent"
       >
         <h1>Join Willards</h1>
         <h2>Your HL2RP adventure awaits!</h2>
@@ -41,7 +42,7 @@ export default {
 <style lang="scss">
 #join {
   .parallax {
-    background-image: url("~@/assets/hl2rp_imgs/citadel.jpg");
+    background-image: url("@/assets/hl2rp_imgs/citadel.jpg");
     &:before {
       content: "";
       background-color: rgba(34, 32, 64, 0.6);

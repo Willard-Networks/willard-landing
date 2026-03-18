@@ -14,8 +14,9 @@
     >
       <v-card
         max-width="360"
-        class="content mx-auto transparent"
-        flat
+        class="content mx-auto"
+        variant="flat"
+        color="transparent"
       >
         <h1>HL2RP Gameplay.</h1>
         <h2 class="font-italic">Built for roleplay</h2>
@@ -24,12 +25,9 @@
         <v-btn
           href="https://willard.network/forums/wn/development-updates.60/"
           class="mt-4"
-          outlined
+          variant="outlined"
         >
-          <v-icon
-            class="mr-2"
-            small
-          >mdi-hammer-wrench</v-icon>Dev diaries
+          <v-icon class="mr-2" size="small">mdi-hammer-wrench</v-icon>Dev diaries
         </v-btn>
       </v-card>
     </v-col>
@@ -43,7 +41,7 @@ export default {
 <style lang="scss">
 #gameplay {
   .parallax {
-    background-image: url("~@/assets/hl2rp_imgs/speed.jpg");
+    background-image: url("@/assets/hl2rp_imgs/speed.jpg");
     &:before {
       content: "";
       background-color: rgba(34, 32, 64, 0.7);

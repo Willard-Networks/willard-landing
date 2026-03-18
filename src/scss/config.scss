@@ -1,3 +1,23 @@
-@import "@/scss/shared/scrollbar.scss";
-@import "@/scss/shared/content.scss";
-@import "@/scss/shared/parallax.scss";
+@use "@/scss/shared/scrollbar.scss";
+@use "@/scss/shared/content.scss";
+@use "@/scss/shared/parallax.scss";
+
+// Apply project fonts — overrides Vuetify 3's default Roboto
+.v-application {
+  font-family: 'Lato', sans-serif;
+
+  // Reset buttons to match Vuetify 2 styling
+  .v-btn {
+    display: inline-flex;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.03125em !important;
+  }
+  .v-btn__content {
+    display: flex;
+    flex: 1 0 auto;
+    align-items: center;
+    justify-content: inherit;
+  }
+}

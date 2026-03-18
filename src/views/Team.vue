@@ -13,8 +13,9 @@
       offset-lg="2"
     >
       <v-card
-        class="content transparent"
-        flat
+        class="content"
+        variant="flat"
+        color="transparent"
       >
         <h1>The Team.</h1>
         <h2 class="font-italic">Making it happen!</h2>
@@ -23,72 +24,52 @@
             color="rgba(0,0,0,0.4)"
             class="mr-md-12"
           >
-            <template v-for="(item, index) in management">
-              <v-subheader
+            <template v-for="(item, index) in management" :key="index">
+              <v-list-subheader
                 v-if="item.header"
-                :key="item.header"
-                {{ item.header }}
-              ></v-subheader>
+              >{{ item.header }}</v-list-subheader>
 
               <v-divider
                 v-else-if="item.divider"
-                :key="index"
                 :inset="item.inset"
               ></v-divider>
 
               <v-list-item
                 v-else
-                :key="item.name"
+                :prepend-avatar="item.avatar"
               >
-                <v-list-item-avatar>
-                  <v-img :src="item.avatar"></v-img>
-                </v-list-item-avatar>
-
-                <v-list-item-content>
-                  <v-list-item-title class="d-flex align-center justify-space-between">{{item.name}}
-                    <v-chip
-                      class="ml-8"
-                      outlined
-                      x-small
-                    >{{item.title}}</v-chip>
-                  </v-list-item-title>
-
-                </v-list-item-content>
+                <v-list-item-title class="d-flex align-center justify-space-between">{{ item.name }}
+                  <v-chip
+                    class="ml-8"
+                    variant="outlined"
+                    size="x-small"
+                  >{{ item.title }}</v-chip>
+                </v-list-item-title>
               </v-list-item>
             </template>
           </v-list>
           <v-list color="rgba(0,0,0,0.4)">
-            <template v-for="(item, index) in devs">
-              <v-subheader
+            <template v-for="(item, index) in devs" :key="index">
+              <v-list-subheader
                 v-if="item.header"
-                :key="item.header"
-                {{ item.header }}
-              ></v-subheader>
+              >{{ item.header }}</v-list-subheader>
 
               <v-divider
                 v-else-if="item.divider"
-                :key="index"
                 :inset="item.inset"
               ></v-divider>
 
               <v-list-item
                 v-else
-                :key="item.name"
+                :prepend-avatar="item.avatar"
               >
-                <v-list-item-avatar>
-                  <v-img :src="item.avatar"></v-img>
-                </v-list-item-avatar>
-
-                <v-list-item-content>
-                  <v-list-item-title class="d-flex align-center justify-space-between">{{item.name}}
-                    <v-chip
-                      class="ml-8"
-                      outlined
-                      x-small
-                    >{{item.title}}</v-chip>
-                  </v-list-item-title>
-
-                </v-list-item-content>
+                <v-list-item-title class="d-flex align-center justify-space-between">{{ item.name }}
+                  <v-chip
+                    class="ml-8"
+                    variant="outlined"
+                    size="x-small"
+                  >{{ item.title }}</v-chip>
+                </v-list-item-title>
               </v-list-item>
             </template>
           </v-list>
@@ -100,6 +81,7 @@
 </template>
 <script>
 export default {
+  name: 'Team',
   data: () => ({
     management: [
       {
@@ -263,7 +245,7 @@ export default {
 <style lang="scss">
 #team {
   .parallax {
-    background-image: url("~@/assets/hl2rp_imgs/cps.jpg");
+    background-image: url("@/assets/hl2rp_imgs/cps.jpg");
     &:before {
       content: "";
       background-color: rgba(34, 32, 64, 0.85);

@@ -14,11 +14,12 @@
     >
       <v-card
         max-width="360"
-        class="content mx-auto transparent"
-        flat
+        class="content mx-auto"
+        variant="flat"
+        color="transparent"
       >
         <h1>New arrivals.</h1>
-        <h2 class="font-italic">Welcome to city <span class="primary white--text">{{ timerCount }}</span></h2>
+        <h2 class="font-italic">Welcome to city <span class="bg-primary text-white">{{ timerCount }}</span></h2>
         <p>The world is under occupation by an alien force dubbed the Combine. You have arrived in your new city and must find a way to survive this new world.</p>
         <p>Will you choose to follow the system? Or will you choose to carefully go against the grain? Join mankinds fight against oppression and extinction or you can join the greater collective.</p>
         <p>You are the storyteller, which story will you tell?</p>
@@ -26,22 +27,16 @@
           href="https://discord.gg/HbDjUQd"
           target="_blank"
           class="mt-4 mr-3"
-          outlined
+          variant="outlined"
         >
-          <v-icon
-            class="mr-2"
-            small
-          >mdi-microphone-message</v-icon>Discord
+          <v-icon class="mr-2" size="small">mdi-microphone-message</v-icon>Discord
         </v-btn>
         <v-btn
           href="https://willard.network/forums/"
           class="mt-4"
-          outlined
+          variant="outlined"
         >
-          <v-icon
-            class="mr-2"
-            small
-          >mdi-forum</v-icon>Forums
+          <v-icon class="mr-2" size="small">mdi-forum</v-icon>Forums
         </v-btn>
         <a
           href="https://www.deviantart.com/xieangel/art/City-17-Streets-836653258"
@@ -82,7 +77,7 @@ export default {
 <style lang="scss">
 #newcomers {
   .parallax {
-    background-image: url("~@/assets/hl2rp_imgs/city.jpg");
+    background-image: url("@/assets/hl2rp_imgs/city.jpg");
     &:before {
       content: "";
       background-color: rgba(34, 32, 64, 0.7);
