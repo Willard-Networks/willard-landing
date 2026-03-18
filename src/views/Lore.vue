@@ -41,7 +41,7 @@ export default {
 <style lang="scss">
 #lore {
   .parallax {
-    background-image: url("~@/assets/hl2rp_imgs/globe.jpg");
+    background-image: url("@/assets/hl2rp_imgs/globe.jpg");
     &:before {
       content: "";
       background-color: rgba(34, 32, 64, 0.7);

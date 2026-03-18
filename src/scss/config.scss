@@ -1,6 +1,6 @@
-@import "@/scss/shared/scrollbar.scss";
-@import "@/scss/shared/content.scss";
-@import "@/scss/shared/parallax.scss";
+@use "@/scss/shared/scrollbar.scss";
+@use "@/scss/shared/content.scss";
+@use "@/scss/shared/parallax.scss";
 
 // Apply project fonts — overrides Vuetify 3's default Roboto
 .v-application {
