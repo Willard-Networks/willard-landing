@@ -46,7 +46,7 @@ importers:
         specifier: ^9.33.0
         version: 9.33.0(eslint@8.57.1)
       sass:
-        specifier: ^1.97.3
+        specifier: ^1.98.0
         version: 1.98.0
       vite:
         specifier: ^6.2.0
