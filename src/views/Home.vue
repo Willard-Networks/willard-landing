@@ -172,7 +172,7 @@
 </template>
 
 <script>
-import * as easings from 'vuetify/es5/services/goto/easing-patterns'
+import * as easings from 'vuetify/lib/services/goto/easing-patterns'
 import Intro from '@/views/Intro.vue'
 import Newcomers from '@/views/Newcomers.vue'
 import Gameplay from '@/views/Gameplay.vue'
