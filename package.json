@@ -42,5 +42,8 @@
       "vue/multi-word-component-names": "off"
     }
   },
-  "packageManager": "pnpm@10.32.1"
+  "packageManager": "pnpm@10.32.1",
+  "engines": {
+    "node": ">=22.0.0"
+  }
 }
