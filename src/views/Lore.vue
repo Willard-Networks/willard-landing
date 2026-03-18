@@ -27,8 +27,9 @@
           href="https://willard.network/forums/threads/updated-willard-networks-lorefront-past-to-present.274/"
           class="mt-4"
           variant="outlined"
-          prepend-icon="mdi-script-text"
-        >Read more</v-btn>
+        >
+          <v-icon class="mr-2" size="small">mdi-script-text</v-icon>Read more
+        </v-btn>
       </v-card>
     </v-col>
     <div class="parallax"></div>

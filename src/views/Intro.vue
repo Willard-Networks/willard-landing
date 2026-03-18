@@ -38,13 +38,14 @@
         <div class="mt-12 pt-6">
           <v-btn
             href="https://willard.network/forums/"
-            class="body-1 py-5"
+            class="py-5"
             rounded="0"
             variant="outlined"
             color="primary"
             size="x-large"
-            append-icon="mdi-arrow-right"
-          >Visit forums</v-btn>
+          >
+            Visit forums<v-icon class="ml-1">mdi-arrow-right</v-icon>
+          </v-btn>
         </div>
       </v-card>
     </v-col>
@@ -89,11 +90,10 @@ export default {
       color: white;
       line-height: 1;
     }
-    .v-btn {
-      font-family: "Source Sans Pro", sans-serif;
-      text-transform: uppercase;
-      font-size: 1.4rem;
-      letter-spacing: 6px;
+    .v-btn--variant-text {
+      font-family: "Source Sans Pro", sans-serif !important;
+      font-size: 1.4rem !important;
+      letter-spacing: 6px !important;
       color: rgb(196, 196, 196);
       &:hover {
         color: white;

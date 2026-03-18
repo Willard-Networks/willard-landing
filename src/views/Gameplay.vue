@@ -26,8 +26,9 @@
           href="https://willard.network/forums/wn/development-updates.60/"
           class="mt-4"
           variant="outlined"
-          prepend-icon="mdi-hammer-wrench"
-        >Dev diaries</v-btn>
+        >
+          <v-icon class="mr-2" size="small">mdi-hammer-wrench</v-icon>Dev diaries
+        </v-btn>
       </v-card>
     </v-col>
     <div class="parallax"></div>

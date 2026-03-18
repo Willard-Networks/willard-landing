@@ -28,14 +28,16 @@
           target="_blank"
           class="mt-4 mr-3"
           variant="outlined"
-          prepend-icon="mdi-microphone-message"
-        >Discord</v-btn>
+        >
+          <v-icon class="mr-2" size="small">mdi-microphone-message</v-icon>Discord
+        </v-btn>
         <v-btn
           href="https://willard.network/forums/"
           class="mt-4"
           variant="outlined"
-          prepend-icon="mdi-forum"
-        >Forums</v-btn>
+        >
+          <v-icon class="mr-2" size="small">mdi-forum</v-icon>Forums
+        </v-btn>
         <a
           href="https://www.deviantart.com/xieangel/art/City-17-Streets-836653258"
           target="_blank"
