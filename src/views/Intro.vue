@@ -30,10 +30,6 @@
             @click="scrollTo('#lore')"
             variant="text"
           >Lore</v-btn>
-          <v-btn
-            @click="scrollTo('#team')"
-            variant="text"
-          >The team</v-btn>
         </div>
         <div class="mt-12 pt-6">
           <v-btn
