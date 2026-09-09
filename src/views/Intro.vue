@@ -1,15 +1,7 @@
 <template>
-  <v-row
-    id="intro"
-    class="wrapper overflow-hidden"
-    align="center"
-  >
+  <v-row id="intro" class="wrapper overflow-hidden" align="center">
     <v-col class="pl-8 pl-md-3">
-      <v-card
-        class="intro-content mx-auto mb-12"
-        variant="flat"
-        color="transparent"
-      >
+      <v-card class="intro-content mx-auto mb-12" variant="flat" color="transparent">
         <v-img
           alt="HL2RP"
           class="mb-12 mx-auto"
@@ -18,22 +10,9 @@
         ></v-img>
         <h1 class="mb-6">Willard Networks</h1>
         <div class="d-none d-sm-block">
-          <v-btn
-            @click="scrollTo('#newcomers')"
-            variant="text"
-          >New arrivals</v-btn>
-          <v-btn
-            @click="scrollTo('#gameplay')"
-            variant="text"
-          >HL2RP Gameplay</v-btn>
-          <v-btn
-            @click="scrollTo('#lore')"
-            variant="text"
-          >Lore</v-btn>
-          <v-btn
-            @click="scrollTo('#team')"
-            variant="text"
-          >The team</v-btn>
+          <v-btn @click="scrollTo('#newcomers')" variant="text">New arrivals</v-btn>
+          <v-btn @click="scrollTo('#gameplay')" variant="text">HL2RP Gameplay</v-btn>
+          <v-btn @click="scrollTo('#lore')" variant="text">Lore</v-btn>
         </div>
         <div class="mt-12 pt-6">
           <v-btn
@@ -50,32 +29,24 @@
       </v-card>
     </v-col>
     <div class="parallax">
-      <video
-        class="bg-vid"
-        autoplay
-        muted
-        loop
-      >
-        <source
-          src="https://willard.network/hl2rp_imgs/gman_vid.mp4"
-          type="video/mp4"
-        >
+      <video class="bg-vid" autoplay muted loop>
+        <source src="https://willard.network/hl2rp_imgs/gman_vid.mp4" type="video/mp4" />
       </video>
     </div>
   </v-row>
 </template>
 <script>
 export default {
-  name: 'Intro',
+  name: "Intro",
   methods: {
-    scrollTo (selector) {
-      const el = document.querySelector(selector)
+    scrollTo(selector) {
+      const el = document.querySelector(selector);
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth' })
+        el.scrollIntoView({ behavior: "smooth" });
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 <style lang="scss">
 #intro {
