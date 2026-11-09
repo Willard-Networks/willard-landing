@@ -8,7 +8,14 @@ export default defineConfig({
     "*": "vp check --fix",
   },
   lint: { options: { typeAware: true, typeCheck: true } },
-  plugins: [vue(), vuetify()],
+  plugins: [
+    vue(),
+    vuetify({
+      // SSR tests do not render CSS; validate the Sass output in the built-browser check.
+      // Vitest's SSR runner cannot resolve the plugin's virtual Sass module IDs.
+      styles: process.env.VITEST ? true : { configFile: "src/scss/vuetify-settings.scss" },
+    }),
+  ],
   test: {
     server: { deps: { inline: ["vuetify"] } },
   },
