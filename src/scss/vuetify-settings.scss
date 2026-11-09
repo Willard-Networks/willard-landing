@@ -1,0 +1,9 @@
+// Keep the site's v3 responsive layout rather than adopting the v4 breakpoints.
+@use "vuetify/settings" with (
+  $grid-breakpoints: (
+    "md": 960px,
+    "lg": 1280px,
+    "xl": 1920px,
+    "xxl": 2560px,
+  )
+);

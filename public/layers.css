@@ -1,0 +1,2 @@
+/* Establish layer order before the bundled component CSS (see Vuetify's layers guide). */
+@layer vuetify-core, vuetify-components, vuetify-overrides, willard, vuetify-utilities, vuetify-final;
