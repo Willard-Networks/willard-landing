@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Node.js 24 LTS (`.node-version`); minimum 24.11 for Vite+ 1.5.
+- Node.js 26 (`.node-version`), with matching Node 26 type definitions.
 - [Vite+ CLI](https://viteplus.dev/guide/), with project tooling pinned to 1.5.0.
 - pnpm 10.32.1, selected by the `packageManager` field. Keep `pnpm-lock.yaml` as the canonical lockfile.
 
